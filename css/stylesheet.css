@@ -1,0 +1,53 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10%
+}
+
+h2 {
+    font-family: sans-serif;
+    border-bottom: solid gray;
+    padding-bottom: 3%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+
+} 
+
+/* CSS */
+.buttonBox {
+    display: flex;
+    justify-content: center;
+}
+
+.generatePassword {
+    background-color: rgb(0, 0, 0);
+    border: 0 solid rgb(59, 59, 59);
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: whitesmoke;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 0.5;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    transition: all .2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.generatePassword:hover {
+    background-color: #adadad;
+    color: rgb(0, 0, 0);
+}
