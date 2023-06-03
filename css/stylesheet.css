@@ -46,8 +46,8 @@ header {
 #useUppercase {
     -webkit-appearance: none;
     position: relative;
-    width: 50px;
-    height: 30px;
+    width: 38px;
+    height: 20px;
     border-radius: 25px;
     background-color: gray;
     transition: background .3s;
@@ -60,12 +60,12 @@ header {
     position: absolute;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    background-color: rgb(196, 196, 196);
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
     transition: left .3s;
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 12px;
 }
 
 #useUppercase:checked {
