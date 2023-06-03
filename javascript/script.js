@@ -7,6 +7,7 @@ var useSpecialCharactersInput = document.getElementById('useSpecialCharacters');
 var useNumbersInput = document.getElementById('useNumbers');
 var form = document.getElementById('passwordGeneratorCriteria');
 var passwordDisplay = document.getElementById('passwordDisplay');
+var copyButton = document.getElementById('copyButton');
 
 // This function prevents the default refreshing of the page happening each time a password is generated
 form.addEventListener('submit', e => {
@@ -22,6 +23,7 @@ form.addEventListener('submit', e => {
 
 //this function implements the actual password randomization 
 function generatePassword(characterAmount,useUppercase, useLowercase, useSpecialCharacters, useNumbers) {
+  // these variables retain their respective characters 
   var lowercaseCharacters = 'abcdefghijklmnopqrstuvwxyz';
   var uppercaseCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   var specialCharacters = '!@#$%^&*()_+~`|}{[]\\:;?><,./-=';
@@ -46,7 +48,7 @@ function generatePassword(characterAmount,useUppercase, useLowercase, useSpecial
   // this alert notifies the person that a minimum of one checkbox must be selected in order to generate a password
   // if the variable is equal to being empty then no checkbox has been selected 
   if (allowedCharacters === '') {
-    alert('A minimum of one character type is required. Please select one or more for a strong Password to be generated.');
+    alert('A minimum of one character setting must be selected to generate a password. Please select one.');
     return '';
   }
 
@@ -59,4 +61,23 @@ function generatePassword(characterAmount,useUppercase, useLowercase, useSpecial
     password += allowedCharacters[random];
   }
   return password;
+}
+
+// Linked to copy password button, the event listener picks up on when the button is clicked and notifies the user that they have copied the password and executes copytoClipboard function
+copyButton.addEventListener('click', () => {
+  copyToClipboard(passwordDisplay.innerText);
+  alert('Password copied to clipboard!');
+});
+
+//This function is responsible for copying the passwordDisplay.innertext
+function copyToClipboard(text) {
+  //this creates a temporary input element that is assigned the value of the text from passwordDisplay
+  var tempInput = document.createElement('input');
+  tempInput.value = text;
+  // The tempInput is appended to the document and selected
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  //this is the copy command and then deletes the tempInput element from the document
+  document.execCommand('copy')
+  document.body.removeChild(tempInput);
 }
