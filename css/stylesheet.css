@@ -1,17 +1,18 @@
 body {
-    background-color: #8ecae6;
+    background-color: #29524A;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 90vh;
     font-family: sans-serif;
+    font-weight: 300;
 }
 
-header {
-
-    color: black;
-    border-bottom: solid rgb(0, 0, 0);
+h1 {
+    font-weight: 400;
+    border-bottom: solid #0d172a;
+    padding-bottom: 10px;
 }
 
 /* the box for the title and button */
@@ -23,13 +24,13 @@ header {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 60%;
     padding: 30px;
-    background-color: white;
+    background-color: #B8DBD9;
     border-radius: 2rem;
 } 
 
 #passwordDisplay{
     border-radius: .5rem;
-    font-weight: 400;
+    font-weight: 200;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -40,6 +41,7 @@ header {
 }
 
 #settings {
+    font-weight: 500;
     border-bottom: solid black;
 }
 
@@ -78,7 +80,7 @@ header {
 }
 
 #useUppercase:checked {
-    background-color: #bada55;
+    background-color: #08A045;
 }
 
 #useUppercase:checked::after {
@@ -112,7 +114,7 @@ header {
 }
 
 #useLowercase:checked {
-    background-color: #bada55;
+    background-color: #08A045;
 }
 
 #useLowercase:checked::after {
@@ -147,7 +149,7 @@ header {
 }
 
 #useSpecialCharacters:checked {
-    background-color: #bada55;
+    background-color: #08A045;
 }
 
 #useSpecialCharacters:checked::after {
@@ -181,7 +183,7 @@ header {
 }
 
 #useNumbers:checked {
-    background-color: #bada55;
+    background-color: #08A045;
 }
 
 #useNumbers:checked::after {
@@ -197,12 +199,43 @@ header {
 }
 
 #generatePassword {
-    background-color: rgb(0, 0, 0);
+    background-color: #427760;
     border: 0 solid rgb(59, 59, 59);
     border-radius: 1.5rem;
     box-sizing: border-box;
     color: whitesmoke;
     cursor: pointer;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 0.5;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    transition: all .2s cubic-bezier(.4, 0, .2, 1);
+    grid-column: span;
+}
+
+#generatePassword:hover {
+    background-color: #08A045;
+}
+
+/* effect selectors for the Copy Password button */
+.copyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+#copyButton {
+    background-color: #427760;
+    border: 0 solid rgb(59, 59, 59);
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: 400;
     font-family: sans-serif;
     font-size: 15px;
     line-height: 0.5;
@@ -213,7 +246,6 @@ header {
     grid-column: span;
 }
 
-#generatePassword:hover {
-    background-color: #adadad;
-    color: rgb(0, 0, 0);
+#copyButton:hover {
+    background-color: #08A045;
 }
