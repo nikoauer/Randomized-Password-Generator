@@ -1,14 +1,17 @@
 body {
-    background-color: rgb(224, 224, 224);
+    background-color: #8ecae6;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: sans-serif;
 }
+
 header {
-    border-bottom: solid black;
+
+    color: black;
+    border-bottom: solid rgb(0, 0, 0);
 }
 
 /* the box for the title and button */
@@ -21,13 +24,14 @@ header {
     width: 60%;
     padding: 30px;
     background-color: white;
+    border-radius: 2rem;
 } 
 
 #passwordDisplay{
     border-radius: 1.5rem;
     font-weight: 200;
-    background-color: white;
-    color: black;
+    background-color: gray;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 1rem;
     height: 4rem;
@@ -42,7 +46,7 @@ header {
     column-gap: 100px;
 }
 
-/* toggle switches */
+/* Uppercase toggle switch */
 #useUppercase {
     -webkit-appearance: none;
     position: relative;
@@ -76,6 +80,108 @@ header {
     left: 70%;
 }
 
+/* Lowercase toggle switch */
+#useLowercase {
+    -webkit-appearance: none;
+    position: relative;
+    width: 38px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: rgb(110, 110, 110);
+    transition: background-color 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+#useLowercase::after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+    transition: left .3s;
+    top: 10px;
+    left: 12px;
+}
+
+#useLowercase:checked {
+    background-color: #bada55;
+}
+
+#useLowercase:checked::after {
+    left: 70%;
+}
+
+
+/* useSpecialCharacters toggle switch */
+#useSpecialCharacters {
+    -webkit-appearance: none;
+    position: relative;
+    width: 38px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: rgb(110, 110, 110);
+    transition: background-color 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+#useSpecialCharacters::after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+    transition: left .3s;
+    top: 10px;
+    left: 12px;
+}
+
+#useSpecialCharacters:checked {
+    background-color: #bada55;
+}
+
+#useSpecialCharacters:checked::after {
+    left: 70%;
+}
+
+/* useNumbers toggle switch */
+#useNumbers {
+    -webkit-appearance: none;
+    position: relative;
+    width: 38px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: rgb(110, 110, 110);
+    transition: background-color 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+#useNumbers::after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+    transition: left .3s;
+    top: 10px;
+    left: 12px;
+}
+
+#useNumbers:checked {
+    background-color: #bada55;
+}
+
+#useNumbers:checked::after {
+    left: 70%;
+}
 
 /* effect selectors for the generate password button */
 .generateButton {
