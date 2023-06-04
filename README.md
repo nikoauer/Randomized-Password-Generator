@@ -11,7 +11,7 @@ I have created a randomized password generator with a copy function and toggle s
 - looking for ways to improve user experience despite already having the necessary function working
 
 ## Usage
-This is the link to the live site: 
+This is the link to the live Github Pages site: https://nikoauer.github.io/Randomized-Password-Generator/
 
 ![alt text](./css/screenshots/screenshot.png)
 
