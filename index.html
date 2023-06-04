@@ -17,32 +17,33 @@
                 <h3 id="passwordDisplay">Password</h3>
             <main>
                 <h4 id="settings">Settings</h4>
-                <form id="passwordGeneratorCriteria">
-                <div class="grid">
-                    <!-- This takes in the number input, along with the minimum and maximum values -->
-                    <label for="characterAmount">Number of characters</label>
-                    <input type="number" min="8" max="128" value="8" id="characterAmount">
-                    <!-- This is a checkbox for Uppercase -->
-                    <label for="useUppercase">Use Uppercase</label>
-                    <input type="checkbox" id="useUppercase">
-                    <!-- This is a checkbox for Lowercase -->
-                    <label for="useLowercase">Use Lowercase</label>
-                    <input type="checkbox" id="useLowercase">
-                    <!-- This is a checkbox for Special Characters -->
-                    <label for="useSpecialCharacters">Use Special Characters</label>
-                    <input type="checkbox" id="useSpecialCharacters">
-                     <!-- This is a checkbox for Numbers -->
-                    <label for="useNumbers">Use Numbers</label>
-                    <input type="checkbox" id="useNumbers">
-                </div>
-                <!-- This is the generate/copy password buttons -->
-                <div class="generateButton">
-                    <button type="submit" id="generatePassword">Generate Password</button>
-                </div>
-                <div class="copyButton">
-                    <button id="copyButton">Copy Password</button>
-                </div>
-                </form>
+                    <form id="passwordGeneratorCriteria">
+                        <div class="grid">
+                            <!-- This takes in the number input, along with the minimum and maximum values -->
+                            <label for="characterAmount">Number of characters</label>
+                            <input type="number" min="8" max="128" value="8" id="characterAmount">
+                            <!-- This is a checkbox for Uppercase -->
+                            <label for="useUppercase">Use Uppercase</label>
+                            <input type="checkbox" id="useUppercase">
+                            <!-- This is a checkbox for Lowercase -->
+                            <label for="useLowercase">Use Lowercase</label>
+                            <input type="checkbox" id="useLowercase">
+                            <!-- This is a checkbox for Special Characters -->
+                            <label for="useSpecialCharacters">Use Special Characters</label>
+                            <input type="checkbox" id="useSpecialCharacters">
+                            <!-- This is a checkbox for Numbers -->
+                            <label for="useNumbers">Use Numbers</label>
+                            <input type="checkbox" id="useNumbers">
+                        </div>
+                        <!-- This is the generate password button -->
+                        <div class="generateButton">
+                            <button type="submit" id="generatePassword">Generate Password</button>
+                        </div>
+                        <!-- This is the copy password button -->
+                        <div class="copyButton">
+                            <button id="copyButton">Copy Password</button>
+                        </div>
+                    </form>
             </main>
     </div>
 <script src="javascript/script.js"></script>

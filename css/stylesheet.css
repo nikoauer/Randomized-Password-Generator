@@ -1,5 +1,5 @@
 body {
-    background-color: #29524A;
+    background-color: #edf6f9;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -9,6 +9,7 @@ body {
     font-weight: 300;
 }
 
+/* h1 selectors  */
 h1 {
     font-weight: 400;
     border-bottom: solid #0d172a;
@@ -24,10 +25,11 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 60%;
     padding: 30px;
-    background-color: #B8DBD9;
+    background-color: #ffffff;
     border-radius: 2rem;
 } 
 
+/* This is where the password is displayed */
 #passwordDisplay{
     border-radius: .5rem;
     font-weight: 200;
@@ -40,11 +42,13 @@ h1 {
     margin-bottom: 5%;
 }
 
+/* settings title */
 #settings {
     font-weight: 500;
     border-bottom: solid black;
 }
 
+/* grid layout for settings and toggle switches */
 .grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -66,6 +70,7 @@ h1 {
     cursor: pointer;
 }
 
+/* controls the small circle, it's positioning, colour and size */
 #useUppercase::after {
     content: '';
     position: absolute;
@@ -79,10 +84,12 @@ h1 {
     left: 12px;
 }
 
+/* colour changes with check position */
 #useUppercase:checked {
-    background-color: #08A045;
+    background-color: #00bbf9;
 }
 
+/* position movement after check  */
 #useUppercase:checked::after {
     left: 70%;
 }
@@ -100,6 +107,7 @@ h1 {
     cursor: pointer;
 }
 
+/* controls the small circle, it's positioning, colour and size */
 #useLowercase::after {
     content: '';
     position: absolute;
@@ -113,10 +121,12 @@ h1 {
     left: 12px;
 }
 
+/* colour changes with check position */
 #useLowercase:checked {
-    background-color: #08A045;
+    background-color: #00bbf9;
 }
 
+/* position movement after check  */
 #useLowercase:checked::after {
     left: 70%;
 }
@@ -135,6 +145,7 @@ h1 {
     cursor: pointer;
 }
 
+/* controls the small circle, it's positioning, colour and size */
 #useSpecialCharacters::after {
     content: '';
     position: absolute;
@@ -148,10 +159,12 @@ h1 {
     left: 12px;
 }
 
+/* colour changes with check position */
 #useSpecialCharacters:checked {
-    background-color: #08A045;
+    background-color: #00bbf9;
 }
 
+/* position movement after check  */
 #useSpecialCharacters:checked::after {
     left: 70%;
 }
@@ -169,6 +182,7 @@ h1 {
     cursor: pointer;
 }
 
+/* controls the small circle, it's positioning, colour and size */
 #useNumbers::after {
     content: '';
     position: absolute;
@@ -182,10 +196,12 @@ h1 {
     left: 12px;
 }
 
+/* colour changes with check position */
 #useNumbers:checked {
-    background-color: #08A045;
+    background-color: #00bbf9;
 }
 
+/* position movement after check  */
 #useNumbers:checked::after {
     left: 70%;
 }
@@ -198,8 +214,9 @@ h1 {
     padding-top: 5%;
 }
 
+/* selector for the generate password button */
 #generatePassword {
-    background-color: #427760;
+    background-color: #203c64;
     border: 0 solid rgb(59, 59, 59);
     border-radius: 1.5rem;
     box-sizing: border-box;
@@ -216,8 +233,9 @@ h1 {
     grid-column: span;
 }
 
+/* changes colour when hovered over */
 #generatePassword:hover {
-    background-color: #08A045;
+    background-color: #3a6884;
 }
 
 /* effect selectors for the Copy Password button */
@@ -228,8 +246,9 @@ h1 {
     padding-top: 5%;
 }
 
+/* selector for the copy password button */
 #copyButton {
-    background-color: #427760;
+    background-color: #3c71bc;
     border: 0 solid rgb(59, 59, 59);
     border-radius: 1.5rem;
     box-sizing: border-box;
@@ -246,6 +265,7 @@ h1 {
     grid-column: span;
 }
 
+/* changes colour when hovered over */
 #copyButton:hover {
-    background-color: #08A045;
+    background-color: #38a1e3;
 }
